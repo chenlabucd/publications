@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications</title>
+
+  <!-- Widgets -->
+  <script src="https://embed.altmetric.com/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+  <style>
+    :root { --ucd-blue:#022851; --ucd-gold:#FFBF00; --ink:#0f172a; --muted:#475569; --line:#e5e7eb; --bg:#ffffff; }
+    html,body { margin:0; padding:0; background:var(--bg); color:var(--ink);
+      font:18px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
+    .wrap { width:90%; max-width:none; margin:36px auto; }
+    h1, h2 { color: var(--ucd-blue); margin: 0 0 12px; }
+    ol { list-style:none; padding-left:0; margin-left:0; }
+    .pub { margin:0 0 18px; padding:10px 0; border-bottom:1px solid var(--line); }
+
+    .title { font-weight:600; text-decoration:none; color:var(--ink); display:block; line-height:1.25; margin:0; }
+    .title:hover { text-decoration:underline; }
+    .meta { color:var(--muted); line-height:1.35; margin-top:2px; }
+    .authors { }
+    .journal { }
+    .links { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-left:4.2rem; }
+    .chip { display:inline-block; border:1px solid var(--ucd-gold); padding:.15rem .5rem;
+      border-radius:999px; font-size:.8rem; color:var(--ucd-blue); background:#fff8e1; text-decoration:none; }
+    .year-chip { display:inline-block; font-weight:700; background:var(--ucd-gold); color:var(--ucd-blue);
+      border-radius:6px; padding:0.1rem 0.45rem; margin-right:8px; line-height:1; }
+    /* Distinguish conferences */
+    #conf-list .year-chip { background: var(--ucd-blue); color: #fff; }
+
+    /* Publications combined grid */
+    #pub-list .pub {
+      position: relative;
+      display:grid;
+      grid-template-columns: 1fr 160px;
+      column-gap:12px; row-gap:6px; align-items:start; padding:14px 0;
+    }
+    #pub-list .pub .year-chip { position:absolute; left:0; top:14px; margin:0; }
+    #pub-list .pub .maincol { grid-column:1; grid-row:1; margin-left:4.2rem; }
+    #pub-list .pub .badgecol { grid-column:2; grid-row:1 / span 2; display:flex; flex-direction:column; align-items:flex-end; justify-content:flex-start; gap:12px; width:160px; }
+
+    /* Conf list formatting */
+    #conf-title { margin-top: 40px; }
+    #conf-list .pub { display:block; padding:10px 0; text-align:justify; }
+
+    /* Author highlight + corresponding author icon */
+    .me { font-weight:700; color: inherit; }
+    .corr { margin-left:4px; font-size:0.95em; color: var(--ucd-gold); }
+    .corr-ico { vertical-align:-2px; margin-left:2px; }
+  
+/* === Alignment + spacing overrides === */
+:root { --pub-pad-top: 18px; --item-gap: 26px; --year-nudge: -1px; }
+
+/* More space between items and a bit more top padding */
+#pub-list .pub { padding: var(--pub-pad-top) 0 !important; margin: 0 0 var(--item-gap) !important; }
+
+/* Keep DOI chips aligned with title indent (already set via margin-left), spacing stays consistent */
+
+/* Align the year chip's top to the title line top with a tiny optical nudge */
+#pub-list .pub .year-chip { top: calc(var(--pub-pad-top) + var(--year-nudge)) !important; }
+
+/* Ensure the badge column starts at the same top as the title block */
+#pub-list .pub .badgecol { padding-top: var(--pub-pad-top); }
+
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Publications</h1>
+
+    <ol id="pub-list">
+      <!-- 2024 -->
+      <li class="pub">
+        <span class="year-chip">2024</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.1016/j.chroma.2024.465360" target="_blank" rel="noopener">
+            Quantitation of Trace Polyfunctional Thiols in Wine by Liquid Chromatography Quadrupole Orbitrap High-Resolution Mass Spectrometry in Parallel Reaction Monitoring
+          </a>
+          <div class="meta">
+            <span class="authors"><span class="me">Chen, L.*</span><span class="corr" title="Corresponding author"><svg class="corr-ico" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="7" r="4" fill="currentColor"/><path d="M4 22v-2c0-3.313 3.582-6 8-6s8 2.687 8 6v2H4z" fill="currentColor"/></svg></span>, De Longhi, E., Gammacurta, M., Marchal, A., Darriet, P.</span><br>
+            <span class="journal"><em>Journal of Chromatography A</em>, 1736, 465360 (2024)</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.1016/j.chroma.2024.465360" target="_blank" rel="noopener">doi:10.1016/j.chroma.2024.465360</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.1016/j.chroma.2024.465360"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.1016/j.chroma.2024.465360" data-style="small_rectangle"></span>
+        </div>
+      </li>
+
+      <!-- 2023 -->
+      <li class="pub">
+        <span class="year-chip">2023</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.1021/acs.jafc.3c05854" target="_blank" rel="noopener">
+            Identification, Quantitation, and Sensory Evaluation of Thiols in Bordeaux Red Wine with Characteristic Aging Bouquet
+          </a>
+          <div class="meta">
+            <span class="authors"><span class="me">Chen, L.*</span><span class="corr" title="Corresponding author"><svg class="corr-ico" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="7" r="4" fill="currentColor"/><path d="M4 22v-2c0-3.313 3.582-6 8-6s8 2.687 8 6v2H4z" fill="currentColor"/></svg></span>, De Longhi, E., Pons, A., Buffeteau, T., Daugey, N., Redon, P., Shinkaruk, S., Darriet, P.</span><br>
+            <span class="journal"><em>Journal of Agricultural and Food Chemistry</em>, 71(43), 16248–16259 (2023)</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.1021/acs.jafc.3c05854" target="_blank" rel="noopener">doi:10.1021/acs.jafc.3c05854</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.1021/acs.jafc.3c05854"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.1021/acs.jafc.3c05854" data-style="small_rectangle"></span>
+        </div>
+      </li>
+
+      <!-- 2022 -->
+      <li class="pub">
+        <span class="year-chip">2022</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.1021/acs.jafc.2c00243" target="_blank" rel="noopener">
+            Qualitative Screening of Volatile Thiols in Wine by Selective Silver Ion Solid-Phase Extraction with Heart-Cutting Multidimensional Gas Chromatography Mass Spectrometry/Olfactometry
+          </a>
+          <div class="meta">
+            <span class="authors"><span class="me">Chen, L.*</span><span class="corr" title="Corresponding author"><svg class="corr-ico" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="7" r="4" fill="currentColor"/><path d="M4 22v-2c0-3.313 3.582-6 8-6s8 2.687 8 6v2H4z" fill="currentColor"/></svg></span>, Darriet, P.</span><br>
+            <span class="journal"><em>Journal of Agricultural and Food Chemistry</em>, 70(15), 4701–4711 (2022)</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.1021/acs.jafc.2c00243" target="_blank" rel="noopener">doi:10.1021/acs.jafc.2c00243</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.1021/acs.jafc.2c00243"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.1021/acs.jafc.2c00243" data-style="small_rectangle"></span>
+        </div>
+      </li>
+
+      <!-- 2021 -->
+      <li class="pub">
+        <span class="year-chip">2021</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.1111/1541-4337.12810" target="_blank" rel="noopener">
+            Strategies for the Identification and Sensory Evaluation of Volatile Constituents in Wine
+          </a>
+          <div class="meta">
+            <span class="authors"><span class="me">Chen, L.*</span><span class="corr" title="Corresponding author"><svg class="corr-ico" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="7" r="4" fill="currentColor"/><path d="M4 22v-2c0-3.313 3.582-6 8-6s8 2.687 8 6v2H4z" fill="currentColor"/></svg></span>, Darriet, P.</span><br>
+            <span class="journal"><em>Comprehensive Reviews in Food Science and Food Safety</em>, 20(5), 4549–4583 (2021)</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.1111/1541-4337.12810" target="_blank" rel="noopener">doi:10.1111/1541-4337.12810</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.1111/1541-4337.12810"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.1111/1541-4337.12810" data-style="small_rectangle"></span>
+        </div>
+      </li>
+
+      <!-- 2020 -->
+      <li class="pub">
+        <span class="year-chip">2020</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.1021/acs.jafc.0c03183" target="_blank" rel="noopener">
+            Evolution and Correlation of cis-2-Methyl-4-propyl-1,3-oxathiane, Varietal Thiols, and Acetaldehyde during Fermentation of Sauvignon blanc Juice
+          </a>
+          <div class="meta">
+            <span class="authors">Wang, X., <span class="me">Chen, L.</span>, Capone, D. L., Roland, A., <span class="me">Jeffery, D. W.*</span>,</span><br>
+            <span class="journal"><em>Journal of Agricultural and Food Chemistry</em>, 68(32), 8676–8687 (2020)</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.1021/acs.jafc.0c03183" target="_blank" rel="noopener">doi:10.1021/acs.jafc.0c03183</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.1021/acs.jafc.0c03183"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.1021/acs.jafc.0c03183" data-style="small_rectangle"></span>
+        </div>
+      </li>
+
+      <!-- 2019 Food Chem -->
+      <li class="pub">
+        <span class="year-chip">2019</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.1016/j.foodchem.2019.05.126" target="_blank" rel="noopener">
+            Investigation of Intraregional Variation, Grape Amino Acids, and Pre-fermentation Freezing on Varietal Thiols and Their Precursors for <em>Vitis vinifera</em> Sauvignon blanc
+          </a>
+          <div class="meta">
+            <span class="authors"><span class="me">Chen, L.</span>, Capone, D. L., Nicholson, E. L., <span class="me">Jeffery, D. W.*</span></span><br>
+            <span class="journal"><em>Food Chemistry</em>, 295, 637–645 (2019)</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.1016/j.foodchem.2019.05.126" target="_blank" rel="noopener">doi:10.1016/j.foodchem.2019.05.126</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.1016/j.foodchem.2019.05.126"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.1016/j.foodchem.2019.05.126" data-style="small_rectangle"></span>
+        </div>
+      </li>
+
+      <!-- 2019 Molecules -->
+      <li class="pub">
+        <span class="year-chip">2019</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.3390/molecules24132472" target="_blank" rel="noopener">
+            Analysis of Potent Odour-Active Volatile Thiols in Foods and Beverages with a Focus on Wine
+          </a>
+          <div class="meta">
+            <span class="authors"><span class="me">Chen, L.</span>, Capone, D. L., <span class="me">Jeffery, D. W.*</span></span><br>
+            <span class="journal"><em>Molecules</em>, 24(13), 2472 (2019) — Review</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.3390/molecules24132472" target="_blank" rel="noopener">doi:10.3390/molecules24132472</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.3390/molecules24132472"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.3390/molecules24132472" data-style="small_rectangle"></span>
+        </div>
+      </li>
+
+      <!-- 2019 IJ Food Micro -->
+      <li class="pub">
+        <span class="year-chip">2019</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.1016/j.ijfoodmicro.2019.01.014" target="_blank" rel="noopener">
+            Linking Gene Expression and Oenological Traits: Comparison Between <em>Torulaspora delbrueckii</em> and <em>Saccharomyces cerevisiae</em> Strains
+          </a>
+          <div class="meta">
+            <span class="authors">Tondini, F., Lang, T., <span class="me">Chen, L.</span>, Herderich, M., <span class="me">Jiranek, V.*</span></span><br>
+            <span class="journal"><em>International Journal of Food Microbiology</em>, 294, 42–49 (2019)</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.1016/j.ijfoodmicro.2019.01.014" target="_blank" rel="noopener">doi:10.1016/j.ijfoodmicro.2019.01.014</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.1016/j.ijfoodmicro.2019.01.014"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.1016/j.ijfoodmicro.2019.01.014" data-style="small_rectangle"></span>
+        </div>
+      </li>
+
+      <!-- 2018 JAF oxathiane -->
+      <li class="pub">
+        <span class="year-chip">2018</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.1021/acs.jafc.8b04027" target="_blank" rel="noopener">
+            Identification and Quantitative Analysis of 2-Methyl-4-propyl-1,3-oxathiane in Wine
+          </a>
+          <div class="meta">
+            <span class="authors"><span class="me">Chen, L.</span>, Capone, D. L., <span class="me">Jeffery, D. W.*</span></span><br>
+            <span class="journal"><em>Journal of Agricultural and Food Chemistry</em>, 66(41), 10808–10815 (2018)</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.1021/acs.jafc.8b04027" target="_blank" rel="noopener">doi:10.1021/acs.jafc.8b04027</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.1021/acs.jafc.8b04027"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.1021/acs.jafc.8b04027" data-style="small_rectangle"></span>
+        </div>
+      </li>
+
+      <!-- 2018 JAF chiral polyfunctional -->
+      <li class="pub">
+        <span class="year-chip">2018</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.1021/acs.jafc.8b01806" target="_blank" rel="noopener">
+            Chiral Polyfunctional Thiols and Their Conjugated Precursors upon Winemaking with Five <em>Vitis vinifera</em> Sauvignon blanc Clones
+          </a>
+          <div class="meta">
+            <span class="authors"><span class="me">Chen, L.</span>, Capone, D. L., Tondini, F. A., <span class="me">Jeffery, D. W.*</span></span><br>
+            <span class="journal"><em>Journal of Agricultural and Food Chemistry</em>, 66(18), 4674–4682 (2018)</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.1021/acs.jafc.8b01806" target="_blank" rel="noopener">doi:10.1021/acs.jafc.8b01806</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.1021/acs.jafc.8b01806"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.1021/acs.jafc.8b01806" data-style="small_rectangle"></span>
+        </div>
+      </li>
+
+      <!-- 2018 Analytica Chimica Acta -->
+      <li class="pub">
+        <span class="year-chip">2018</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.1016/j.aca.2017.10.031" target="_blank" rel="noopener">
+            Chiral Analysis of 3-Sulfanylhexan-1-ol and 3-Sulfanylhexyl Acetate in Wine by High-performance Liquid Chromatography–Tandem Mass Spectrometry
+          </a>
+          <div class="meta">
+            <span class="authors"><span class="me">Chen, L.</span>, Capone, D. L., <span class="me">Jeffery, D. W.*</span></span><br>
+            <span class="journal"><em>Analytica Chimica Acta</em>, 998, 83–92 (2018)</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.1016/j.aca.2017.10.031" target="_blank" rel="noopener">doi:10.1016/j.aca.2017.10.031</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.1016/j.aca.2017.10.031"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.1016/j.aca.2017.10.031" data-style="small_rectangle"></span>
+        </div>
+      </li>
+
+      <!-- 2015 FSB -->
+      <li class="pub">
+        <span class="year-chip">2015</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.1007/s10068-015-0273-y" target="_blank" rel="noopener">
+            Effect of Diammonium Phosphate Supplementation on the Amino Acid Metabolism during Fermentation and Sensory Properties of Fresh Spine Grape (<em>Vitis davidii</em> Foex) Wine
+          </a>
+          <div class="meta">
+            <span class="authors">Jin, Q., <span class="me">Chen, L.</span>, Li, Z., Li, X., <span class="me">Li, J.*</span></span><br>
+            <span class="journal"><em>Food Science and Biotechnology</em>, 24, 2051–2057 (2015)</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.1007/s10068-015-0273-y" target="_blank" rel="noopener">doi:10.1007/s10068-015-0273-y</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.1007/s10068-015-0273-y"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.1007/s10068-015-0273-y" data-style="small_rectangle"></span>
+        </div>
+      </li>
+
+      <!-- 2015 J Food Sci -->
+      <li class="pub">
+        <span class="year-chip">2015</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.1111/1750-3841.12840" target="_blank" rel="noopener">
+            Free and Bound Volatile Chemicals in Mulberry (<em>Morus atropurpurea</em> Roxb.)
+          </a>
+          <div class="meta">
+            <span class="authors"><span class="me">Chen, L.</span>, Zhang, X., Jin, Q., Yang, L., <span class="me">Li, J.*</span>, Chen, F.</span><br>
+            <span class="journal"><em>Journal of Food Science</em>, 80(5), C975–C982 (2015)</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.1111/1750-3841.12840" target="_blank" rel="noopener">doi:10.1111/1750-3841.12840</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.1111/1750-3841.12840"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.1111/1750-3841.12840" data-style="small_rectangle"></span>
+        </div>
+      </li>
+
+      <!-- 2013 EFRT -->
+      <li class="pub">
+        <span class="year-chip">2013</span>
+        <div class="maincol">
+          <a class="title" href="https://doi.org/10.1007/s00217-012-1886-5" target="_blank" rel="noopener">
+            Occurrence of Ochratoxin A in Chinese Wines: Influence of Local Meteorological Parameters
+          </a>
+          <div class="meta">
+            <span class="authors">Zhang, X., <span class="me">Chen, L.</span>, Li, J., Zhu, B., <span class="me">Ma, L.*</span></span><br>
+            <span class="journal"><em>European Food Research and Technology</em>, 236, 277–283 (2013)</span>
+          </div>
+        </div>
+        <div class="links">
+          <a class="chip" href="https://doi.org/10.1007/s00217-012-1886-5" target="_blank" rel="noopener">doi:10.1007/s00217-012-1886-5</a>
+        </div>
+        <div class="badgecol">
+          <div class="altmetric-embed" data-badge-type="donut" data-link-target="_blank" data-doi="10.1007/s00217-012-1886-5"></div>
+          <span class="__dimensions_badge_embed__" data-doi="10.1007/s00217-012-1886-5" data-style="small_rectangle"></span>
+        </div>
+      </li>
+    </ol>
+
+    <h2 id="conf-title">Conference Presentations</h2>
+    <ol id="conf-list">
+      <li class="pub"><span class="year-chip">2024</span> <span class="me">Chen, L.*</span><span class="corr" title="Corresponding author"><svg class="corr-ico" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="7" r="4" fill="currentColor"/><path d="M4 22v-2c0-3.313 3.582-6 8-6s8 2.687 8 6v2H4z" fill="currentColor"/></svg></span>, De Longhi, E., Pons, A., Buffeteau, T., Daugey, N., Redon, P., Shinkaruk, S., Darriet, P. New Insights on Volatile Thiols in Bordeaux Red Wine with Characteristic Aging Bouquet. Oral presentation accepted at the 13th edition of In Vino Analytica Scientia (IVAS). July 7–12, 2024. Davis, CA, USA.</li>
+      <li class="pub"><span class="year-chip">2024</span> <span class="me">Chen, L.*</span><span class="corr" title="Corresponding author"><svg class="corr-ico" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="7" r="4" fill="currentColor"/><path d="M4 22v-2c0-3.313 3.582-6 8-6s8 2.687 8 6v2H4z" fill="currentColor"/></svg></span>, Luo, X., Cheng, Z., Zhao, S., Li, L., Kreitman, G. Exploring Dipeptides and Oligopeptides in Wine by UHPLC–HRMS. Submitted for the 75th American Society for Enology and Viticulture (ASEV) National Conference. June 17–20, 2024. Portland, OR, USA.</li>
+      <li class="pub"><span class="year-chip">2023</span> De Longhi, E., <span class="me">Chen, L.</span>, Redon, P., Schussler, C., Jung, R., Patz, C., Rauhut, D., Darriet, P. Contribution of Volatile Thiols to the Aroma of Riesling wines from three regions in Germany and France (Rheingau, Mosel, and Alsace). Oral presentation at the ŒNO Macrowine 2023 12th International Symposium of Œnology. June 25–28, 2023. Bordeaux, France.</li>
+      <li class="pub"><span class="year-chip">2022</span> Lebert, M., Cluzet, S., Burdziej, A., Bautista, C., Plaumann, P.-L., Schwarzwälder, A., Haag, F., <span class="me">Chen, L.</span>, Etcheparre, E., Gaume, N., Darriet, P. Using Space as a complex stressor in evolutionary adaptational process: The Wine In Space Experiment project (WISE). Oral presentation at 38th Annual Meeting of American Society for Gravitational and Space Research. Nov. 10–12, 2022. Houston, TX. USA.</li>
+      <li class="pub"><span class="year-chip">2022</span> <span class="me">Chen, L.*</span><span class="corr" title="Corresponding author"><svg class="corr-ico" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="7" r="4" fill="currentColor"/><path d="M4 22v-2c0-3.313 3.582-6 8-6s8 2.687 8 6v2H4z" fill="currentColor"/></svg></span>, Darriet, P. An Ag+ SPE method combined with Deans’ switch heart-cutting MDGC–MS/Olfactometry approach for identifying unknown volatile thiols in wine. Oral presentation accepted at the 12th edition of In Vino Analytica Scientia (IVAS). July 3–7, 2022. Neustadt, Germany.</li>
+      <li class="pub"><span class="year-chip">2021</span> Wang, X., <span class="me">Chen, L.</span>, Capone, D., Roland, A., Jeffery, D. Alternative fate of varietal thiols in wine: identification, formation, and enantiomeric distribution of novel 1,3-oxathianes. Oral presentation at Macrowine. June 23–30, 2021. Virtual Congress.</li>
+      <li class="pub"><span class="year-chip">2020</span> <span class="me">Chen, L.</span>, Capone, D., Nicholson, E., Jeffery, D. Intraregional profiles of varietal thiols and precursors in Sauvignon blanc juices and wines from the Adelaide Hills. Oral presentation at XIIIth International Terroir Congress. Nov. 17–18, 2020. Virtual Congress, Adelaide, SA, Australia.</li>
+      <li class="pub"><span class="year-chip">2019</span> Wang, X., <span class="me">Chen, L.</span>, Capone, D., Jeffery, D. Fate of tropical odorants in wine: Identification and stability of 2-methyl-4-propyl-1,3-oxathiane. Poster session presented at the 17th Australian Wine Industry Technical Conference. July 21–24, 2019. Adelaide, SA, Australia.</li>
+      <li class="pub"><span class="year-chip">2019</span> <span class="me">Chen, L.</span>, Capone, D., Jeffery, D. Identification of 2-methyl-4-propyl-1,3-oxathiane as a new volatile sulfur compound in wine. Oral presentation at the 11th edition of In Vino Analytica Scientia (IVAS). Jun. 25–28, 2019. Bordeaux, France.</li>
+      <li class="pub"><span class="year-chip">2018</span> <span class="me">Chen, L.</span> Polyfunctional thiols in wine: Analytical evaluation and exploration. Oral presentation at the Research Day of School of Agriculture, Food & Wine, The University of Adelaide. Nov. 30, 2018. Adelaide, SA, Australia.</li>
+      <li class="pub"><span class="year-chip">2018</span> <span class="me">Chen, L.</span> Polyfunctional thiols in Sauvignon blanc wine: precursor stereochemistry, clone, and winemaking. Oral presentation at CRUSH – The Grape and Wine Science Symposium. Sep. 25–26, 2018. Adelaide, SA, Australia. (Best presentation award)</li>
+      <li class="pub"><span class="year-chip">2018</span> Puglisi, C., <span class="me">Chen, L.</span>, Wilkinson, K. Flavour profiles of leaves from different varieties of Geraldton Wax. Oral presentation at the 2nd International Flavor and Fragrance (IFF) conference. May 28–31, 2018. Wuxi, China.</li>
+      <li class="pub"><span class="year-chip">2018</span> <span class="me">Chen, L.</span>, Capone, D., Jeffery, D. Polyfunctional thiols in wine: chirality, precursor stereochemistry, and Sauvignon blanc clone type. Oral presentation at the 69th American Society for Enology and Viticulture (ASEV) National conference. June 18–21, 2018. Monterey, CA, USA.</li>
+      <li class="pub"><span class="year-chip">2017</span> <span class="me">Chen, L.</span>, Capone, D., Jeffery, D. Chiral analysis of 3-SH and 3-SHA in wine. Oral presentation at CRUSH – The Grape and Wine Science Symposium. Nov. 13–14, 2017. Adelaide, SA, Australia.</li>
+      <li class="pub"><span class="year-chip">2017</span> Capone, D., <span class="me">Chen, L.</span>, Francis, L., Jeffery, D. Quantitation of potent polyfunctional thiols and their enantiomers in wine using HPLC–MS/MS after derivatization. Invited oral presentation at the 254th ACS National Meeting & Exposition. Aug. 20–24, 2017. Washington, DC, USA.</li>
+    </ol>
+  </main>
+</body>
+</html>
